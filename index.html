@@ -25,6 +25,9 @@
             <h2>Sobre a Vikings Barbearia</h2>
             <p>Na Vikings Barbearia, cada atendimento é pensado para oferecer muito mais do que um corte de cabelo. Unimos técnica, atenção aos detalhes e um ambiente agradável para proporcionar uma experiência completa, valorizando o estilo e a personalidade de cada cliente.
             Seja para um corte clássico, um degradê moderno, o alinhamento da barba ou um cuidado completo com o visual, nossa missão é entregar qualidade, conforto e um atendimento que faz você querer voltar.</p>
+            <h3>Funcionamento</h3>
+            <p>Segunda a Sábado</p>
+            <p>9:00 às 12:00 / 14:00 às 20:00</p>
             <h3>Diferenciais</h3>
             <ul>
                 <li>Cortes modernos e tradicionais</li>
@@ -77,22 +80,27 @@
                 <div class="formularioA" id="formularioA">
                     <form>
                     <label for="nome">Nome completo</label>
-                    <input type="text" id="nome" name="nome" placeholder="Seu nome">
+                    <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
                     
                     <label for="tel">Telefone</label>
-                    <input type="tel" id="tel" name="tel" placeholder="(85) 9xxxx-xxxx">
+                    <input type="tel" id="tel" name="tel" placeholder="(85) 9xxxx-xxxx" required>
 
-                    <select name="service" id="service">
+                    <select name="service" id="service" required>
                         <option value="" selected disabled>Selecione o serviço</option>
-                        <option value="Corte">Corte de Cabelo</option>
+                        <option value="Corte_Degrade">Corte Degradê</option>
+                        <option value="Corte+Sobrancelha">Corte + Sobrancelha</option>
+                        <option value="Corte_Freestyle">Corte + Freestyle</option>
+                        <option value="Corte_Infantil">Corte Infantil</option>
                         <option value="Barba">Barba</option>
                         <option value="Corte+barba">Corte + Barba</option>
                         <option value="Pigmentacao">Pigmentação</option>
+                        <option value="Nevou">Nevou (Descoloração)</option>
+                        <option value="Nevou+Corte">Nevou + Corte</option>
                     </select>
                     <label for="data">Data</label>
-                    <input type="date" id="data" name="data" placeholder="Selecione a data">
+                    <input type="date" id="data" name="data" placeholder="Selecione a data" required>
                     <label for="horario">Horário</label>
-                    <input type="time" id="horario" min="08:00" max="19:00" step="1800" placeholder="Selecione o horário">
+                    <input type="time" id="horario" min="08:00" max="19:00" step="1800" placeholder="Selecione o horário" required>
 
                     <button>Agendar agora</button>
                     </form>
@@ -105,14 +113,14 @@
                 <h2>Contato</h2>
                 <div class="mapa" id="mapa">
                     <h3>Onde estamos</h3>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.212793487932!2d-38.534849925557225!3d-3.7638117433521914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c7492b89e058d1%3A0xbec6e494959f45a5!2sR.%20Abelardo%20Marinho%2C%20269%20-%20Vila%20Uni%C3%A3o%2C%20Fortaleza%20-%20CE%2C%2060411-075!5e0!3m2!1spt-BR!2sbr!4v1784130718660!5m2!1spt-BR!2sbr" width="500" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.212793487932!2d-38.534849925557225!3d-3.7638117433521914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c7492b89e058d1%3A0xbec6e494959f45a5!2sR.%20Abelardo%20Marinho%2C%20269%20-%20Vila%20Uni%C3%A3o%2C%20Fortaleza%20-%20CE%2C%2060411-075!5e0!3m2!1spt-BR!2sbr!4v1784130718660!5m2!1spt-BR!2sbr" title="Localização da Vikings Barbearia" width="500" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
                 </div>
                 <div class="infos" id="infos">
                     <h3>Entre em contato conosco</h3>
-                    <a target="_blank" href="https://api.whatsapp.com/send?phone=5585996120172&text=Ol%C3%A1%20%2C%20Kau%C3%A3%20queria%20marcar%20um%20hor%C3%A1rio!!%20Seria%20poss%C3%ADvel%3F">
+                    <a target="_blank" rel="noopener noreferrer" href="https://api.whatsapp.com/send?phone=5585996120172&text=Ol%C3%A1%20%2C%20Kau%C3%A3%20queria%20marcar%20um%20hor%C3%A1rio!!%20Seria%20poss%C3%ADvel%3F"  aria-label="Falar no WhatsApp">
                         <img src="./imagens/whatsapp.png" alt="Logo do WhatsApp">
                     </a>
-                    <a target="_blank" href="https://www.instagram.com/kauahbarber_/">
+                    <a target="_blank" href="https://www.instagram.com/kauahbarber_/" aria-label="Instagram">
                         <img src="./imagens/instagram.png" alt="Logo do Instagram">
                     </a>
                 </div>
