@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./imagens/favicon_io/favicon.ico" type="image/x-icon">
+    <title>Vikings Barbearia</title>
+</head>
+<body>
+    <header id="inicio">
+        <img class="logo" src="./imagens/logoVikings.png" alt="Logo da Vikings Barbearia">
+        <nav>
+            <ul>
+                <li><a href="#sobre">Início</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#depoimentos">Depoimentos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+        <a href="#formularioA"><button class="agenda" id="agenda">Agendar agora</button></a>
+    </header>
+    <main>
+        <section class="sobre" id="sobre">
+            <h2>Sobre a Vikings Barbearia</h2>
+            <p>Na Vikings Barbearia, cada atendimento é pensado para oferecer muito mais do que um corte de cabelo. Unimos técnica, atenção aos detalhes e um ambiente agradável para proporcionar uma experiência completa, valorizando o estilo e a personalidade de cada cliente.
+            Seja para um corte clássico, um degradê moderno, o alinhamento da barba ou um cuidado completo com o visual, nossa missão é entregar qualidade, conforto e um atendimento que faz você querer voltar.</p>
+            <h3>Diferenciais</h3>
+            <ul>
+                <li>Cortes modernos e tradicionais</li>
+                <li>Ambiente confortável e climatizado</li>
+                <li>Atendimento personalizado</li>
+                <li>Agendamento rápido e sem filas</li>
+            </ul>
+        </section>
+        <section id="servicos">
+            <h2>Serviços</h2>
+            <div class="servicos">
+                <div class="card">
+                    <img src="./imagens/degrade2.png" alt="Imagem de Corte Degradê">
+                    <p class="opcao">Corte Degradê</p>
+                    <p class="preco">R$ 25,00</p>
+                </div>
+                <div class="card">
+                    <img src="./imagens/degrade.png" alt="Imagem de Freestyle">
+                    <p class="opcao">Corte com Freestyle</p>
+                    <p class="preco">R$ 25,00</p>
+                </div>
+                <div class="card">
+                    <img src="./imagens/corteInfantil.png" alt="Imagem de Corte Infantil">
+                    <p class="opcao">Corte Infantil</p>
+                    <p class="preco">R$ 25,00</p>
+                </div>
+                <div class="card">
+                    <img src="./imagens/nevou.png" alt="Imagem de corte com Nevou">
+                    <p class="opcao">Nevou</p>
+                    <p class="preco">R$ 25,00</p>
+                </div>
+                <div class="card">
+                    <img src="./imagens/pigmentacao.png" alt="Imagem de Corte pigmentado">
+                    <p class="opcao">Pigmentação</p>
+                    <p class="preco">R$ 25,00</p>
+                </div>
+            </div>
+        </section>
+        <section id="depoimentos">
+            <h2>Depoimentos</h2>
+            <div class="depoimentosCli">
+                <img class="depoimento" src="./imagens/depoimento.png" alt="Depoimento cliente">
+                <img class="depoimento" src="./imagens/depoimento2.png" alt="Depoimento cliente">
+                <img class="depoimento" src="./imagens/depoimento3.png" alt="Depoimento cliente">
+            </div>
+        </section>
+        <section>
+            <h2>Agende seu Horário</h2>
+            <section class="formulario">
+                <div class="formularioA" id="formularioA">
+                    <form>
+                    <label for="nome">Nome completo</label>
+                    <input type="text" id="nome" name="nome" placeholder="Seu nome">
+                    
+                    <label for="tel">Telefone</label>
+                    <input type="tel" id="tel" name="tel" placeholder="(85) 9xxxx-xxxx">
+
+                    <select name="service" id="service">
+                        <option value="" selected disabled>Selecione o serviço</option>
+                        <option value="Corte">Corte de Cabelo</option>
+                        <option value="Barba">Barba</option>
+                        <option value="Corte+barba">Corte + Barba</option>
+                        <option value="Pigmentacao">Pigmentação</option>
+                    </select>
+                    <label for="data">Data</label>
+                    <input type="date" id="data" name="data" placeholder="Selecione a data">
+                    <label for="horario">Horário</label>
+                    <input type="time" id="horario" min="08:00" max="19:00" step="1800" placeholder="Selecione o horário">
+
+                    <button>Agendar agora</button>
+                    </form>
+                </div>
+                <div class="formularioB">
+                    <img src="./imagens/imgForm.png" alt="Corte com Nevou, realizado na Vikings Barbearia">
+                </div>
+            </section>
+            <section class="contato" id="contato">
+                <h2>Contato</h2>
+                <div class="mapa" id="mapa">
+                    <h3>Onde estamos</h3>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.212793487932!2d-38.534849925557225!3d-3.7638117433521914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c7492b89e058d1%3A0xbec6e494959f45a5!2sR.%20Abelardo%20Marinho%2C%20269%20-%20Vila%20Uni%C3%A3o%2C%20Fortaleza%20-%20CE%2C%2060411-075!5e0!3m2!1spt-BR!2sbr!4v1784130718660!5m2!1spt-BR!2sbr" width="500" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                </div>
+                <div class="infos" id="infos">
+                    <h3>Entre em contato conosco</h3>
+                    <a target="_blank" href="https://api.whatsapp.com/send?phone=5585996120172&text=Ol%C3%A1%20%2C%20Kau%C3%A3%20queria%20marcar%20um%20hor%C3%A1rio!!%20Seria%20poss%C3%ADvel%3F">
+                        <img src="./imagens/whatsapp.png" alt="Logo do WhatsApp">
+                    </a>
+                    <a target="_blank" href="https://www.instagram.com/kauahbarber_/">
+                        <img src="./imagens/instagram.png" alt="Logo do Instagram">
+                    </a>
+                </div>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <p>© 2026 Vikings Barbearia. Todos os direitos reservados. | Desenvolvido por CecyTeix.</p>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+</html>
