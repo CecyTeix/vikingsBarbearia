@@ -16,10 +16,6 @@
   --font-body: 'Work Sans', 'Helvetica Neue', sans-serif;
 
   --gap: clamp(1.25rem, 2vw, 2.5rem);
-
-  --radius-lg: 18px;
-  --radius-md: 12px;
-  --radius-pill: 999px;
 }
 
 * { box-sizing: border-box; }
