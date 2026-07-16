@@ -1,5 +1,7 @@
 const formulario = document.querySelector("#formularioA")
+const botao = document.querySelector("#botao")
 
+const numero = "5585987362181";
 
 formulario.addEventListener("submit", function(e){
     e.preventDefault();
@@ -18,10 +20,19 @@ formulario.addEventListener("submit", function(e){
     Data: ${dataBR}
     Horário: ${horario}`;
 
-    const numero = "5585987362181";
-
     window.open(
         `https://wa.me/${numero}?text=${encodeURIComponent(texto)}`,
         "_blank"
     );
 });
+
+botao.addEventListener("click", function(e){
+    e.preventDefault();
+
+    const texto = `Fala Kauã, quero assinar um plano!`;
+
+    window.open(
+        `https://wa.me/${numero}?text=${encodeURIComponent(texto)}`,
+        "_blank"
+    );
+})
